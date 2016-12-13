@@ -27,6 +27,7 @@ function quiz1() {
 	document.getElementById("container").innerHTML+="<div style='width=400'><center><h2>Upss!! Siapa Dia?</h2></center></div>";
 	document.getElementById("container").innerHTML+="<div style='width=400'><center><input type='text' name='name' onchange='answer1()'></div>";
 	document.getElementById("container").innerHTML+="<center><button class='mulai' onclick='quiz2()'>Jawab</button></center>";
+	setTimeout(scoring, 50000);
 }
 
 function answer1() {
@@ -196,8 +197,6 @@ function answer10() {
 		console.log(score);
 	}
 }
-
-setTimeout(scoring, 50000);
  
 function scoring() {
 	document.getElementById("container").innerHTML="<div><img id='myButton' src='image/speaker-on.svg' width='20' onclick='playAudio()' style='position: fixed; top: 10px; left: auto; margin-left: 10px;'></div>";
