@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<label>Enter your Name here: </label><br>
+<input type= text id="namehere" onchange="displayname()"><br>
+
+
+<script>
+function displayname() {
+    document.getElementById("demo").innerHTML = 
+document.getElementById("namehere").value;
+}
+
+</script>
+
+
+<p id="demo"></p>
+
+</body>
+</html> 
