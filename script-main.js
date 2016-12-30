@@ -27,7 +27,7 @@ function quiz1() {
 	document.getElementById("container").innerHTML+="<div style='width=400'><center><h2>Upss!! Siapa Dia?</h2></center></div>";
 	document.getElementById("container").innerHTML+="<div style='width=400'><center><input type='text' name='name' onchange='answer1()'></div>";
 	document.getElementById("container").innerHTML+="<center><button class='mulai' onclick='quiz2()'>Jawab</button></center>";
-	//setTimeout(scoring, 50000);
+	setTimeout(scoring, 1200000);
 }
 
 function answer1() {
